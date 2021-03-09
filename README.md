@@ -4,13 +4,13 @@ Bits and pieces of the [Craft Delivery](https://craftdelivery) stack
 
 ### React Native Helper
 
-I came up with this helper while developing the driver `rn-dispatch` app
+I came up with this helper while developing the driver `dispatcher` app
 
 [Expo.js apps using a localhost backend over ngrok](https://dev.to/craftdelivery/expo-js-apps-using-a-localhost-backend-over-ngrok-hb6)
 
 ### React Native Dispatch App
 
-`rn-dispatcher` folder is very much a work in progress
+`dispatcher` folder is very much a work in progress
 
 This project was a chance to try out [redux-toolkit](https://github.com/reduxjs/redux-toolkit)
   - State is kept in slices instead of combining reducers

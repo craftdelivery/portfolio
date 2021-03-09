@@ -1,0 +1,6 @@
+ngrokhandler.js
+
+# add to .gitignore as well
+# we should really remove to publish
+# or create an empty one!!!
+app.config.js
