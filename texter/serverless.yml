@@ -1,0 +1,38 @@
+service: cd-texter
+
+provider:
+  name: aws
+  stage: dev
+  runtime: nodejs12.x
+  region: ${env:OMITTED}
+  apiGateway:
+    shouldStartNameWithService: true
+  logs:
+    restApi: true
+  
+  environment:
+    SECURITY_HEADER: ${env:OMITTED}
+    REGION: ${env:OMITTED}
+    API_KEY: ${env:OMITTED}
+    TEL: ${env:OMITTED}
+    SID: ${env:OMITTED}
+    TOKEN: ${env:OMITTED}
+
+package:
+  include:
+    - node_modules/**
+  exclude:
+    - /*/\.txt
+    - /*/\.md
+    - package.json
+    - temp
+
+functions:
+  send:
+    handler: src/handler.send
+    reservedConcurrency: 25
+    events:
+      - http:
+          path: send
+          method: post
+          cors: true

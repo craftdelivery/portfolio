@@ -1,0 +1,16 @@
+{
+  "name": "cd-texter",
+  "version": "1.0.0",
+  "description": "serverless twilio client",
+  "main": "src/handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "et",
+  "license": "ISC",
+  "dependencies": {
+    "http-status-codes": "^2.1.4",
+    "phone-formatter": "0.0.2",
+    "twilio": "^3.54.1"
+  }
+}

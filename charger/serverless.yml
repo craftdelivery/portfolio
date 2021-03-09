@@ -1,0 +1,68 @@
+service: cd-charger
+
+provider:
+  name: aws
+  stage: dev
+  runtime: nodejs12.x
+  region: ${env:OMITTED}
+  apiGateway:
+    shouldStartNameWithService: true
+  logs:
+    restApi: true
+  
+  environment:
+    SECURITY_HEADER: ${env:OMITTED}
+    API_KEY: ${env:OMITTED}
+    STRIPE_SECRET: ${env:OMITTED}
+    STRIPE_SECRET_TEST: ${env:OMITTED}
+
+package:
+  include:
+    - node_modules/**
+  exclude:
+    - /*/\.txt
+    - /*/\.md
+    - package.json
+    - temp
+
+functions:
+  chargescapture:
+    handler: src/handler.chargesCapture
+    reservedConcurrency: 25
+    events:
+      - http:
+          path: chargescapture
+          method: post
+          cors: true
+  chargescreate:
+    handler: src/handler.chargesCreate
+    reservedConcurrency: 25
+    events:
+      - http:
+          path: chargescreate
+          method: post
+          cors: true
+  chargesretrieve:
+    handler: src/handler.chargesRetrieve
+    reservedConcurrency: 25
+    events:
+      - http:
+          path: chargesretrieve
+          method: post
+          cors: true
+  chargesupdate:
+    handler: src/handler.chargesUpdate
+    reservedConcurrency: 25
+    events:
+      - http:
+          path: chargesupdate
+          method: post
+          cors: true
+  refundscreate:
+    handler: src/handler.refundsCreate
+    reservedConcurrency: 25
+    events:
+      - http:
+          path: refundscreate
+          method: post
+          cors: true
