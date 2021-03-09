@@ -1,0 +1,15 @@
+export default {
+  chargeCaptured: 'charge.captured',
+  chargeDisputeClosed: 'charge.dispute.closed',
+  chargeDisputeCreated: 'charge.dispute.created',
+  chargeDisputeFundsReinstated: 'charge.dispute.funds_reinstated',
+  chargeDisputeFundsWithdrawn: 'charge.dispute.funds_withdrawn',
+  chargeDisputeUpdated: 'charge.dispute.updated',
+  chargeExpired: 'charge.expired',
+  chargeFailed: 'charge.failed',
+  chargePending: 'charge.pending',
+  chargeRefunded: 'charge.refunded',
+  chargeRefundUpdated: 'charge.refund.updated',
+  chargeSucceeded: 'charge.succeeded',
+  chargeUpdated: 'charge.updated',
+}
