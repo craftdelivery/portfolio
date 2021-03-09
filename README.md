@@ -1,6 +1,16 @@
-## Portfolio
+# Portfolio
 
-### Overview
+## React Native
+
+I came up with this helper while developing the driver `dispatch` app (WIP)
+
+[Expo.js apps using a localhost backend over ngrok](https://dev.to/craftdelivery/expo-js-apps-using-a-localhost-backend-over-ngrok-hb6)
+
+### Native Code
+
+TODO: add dispatch folder
+
+## Lambda
 These projects are kept as separate git repos in AWS Code Commit
 
 ### Rationale
