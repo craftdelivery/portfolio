@@ -11,11 +11,7 @@ const initialState = {
   logoutInProgress: false,
   details: null,
 }
-// perhaps we need a device slice?
-// signout slice
-// signin slice
-// or progress slice???
-// user slice just for user info
+
 export default createSlice({
   name: 'user',
   initialState,
