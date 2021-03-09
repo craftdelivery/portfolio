@@ -11,7 +11,7 @@ I came up with this helper while developing the driver `dispatch` app (WIP)
 TODO: add dispatch folder
 
 ## Lambda
-These projects are kept as separate git repos in AWS Code Commit
+These projects are kept as separate git repos in AWS Code Commit. The main Craft Delivery ExpressJS app calls these functions using `axios`
 
 ### Rationale
 The Craft Delivery ExpressJS app was getting too big to manage with so many dependencies. I decided to spin out some of the bigger chunks to AWS Lambda
@@ -22,6 +22,10 @@ Local Env variables have been replaced with `OMITTED`
 
 ### No Database connection
 Charger, Mailer and Texter do not connect to the postgres database. This is done for security purposes as well as to minimize open connections. Database relevant feedback is provided via webhook
+
+### Webhook init
+
+See `index-express.js` for how the express app handles incoming webhooks
 
 ### Projects
 `express-js` folders contain support code from the ExpressJS monolith
