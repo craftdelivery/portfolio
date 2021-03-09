@@ -1,0 +1,25 @@
+SELECT enum_range(NULL::emailtype)
+
+-- {
+--   admin-json,
+--   admin-pg,
+--   admin-pg-json,
+--   blog-inquiry,
+--   checkout-cust-cancel,
+--   checkout-driver-cancel,
+--   checkout-notify,
+--   coming-soon,
+--   coming-soon-easy,
+--   coming-soon-verify-remind,
+--   coming-soon-invite,
+--   coming-soon-early-thanks,
+--   coming-soon-invite-nophone,
+--   ping-admin,
+--   none,
+--   reg,
+--   pwd-reset,
+--   reset,
+--   resend-conf,
+--   signup-convert,
+--   signup-new
+-- }
