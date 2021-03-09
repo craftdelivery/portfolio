@@ -37,7 +37,7 @@ Charger, Mailer and Texter do not connect to the postgres database. This is done
         - This way we can categorize the aws notifications by email type
       - USER emails
         - generate html using `genmail.js`
-          - depens on [npm mailgen](https://www.npmjs.com/package/mailgen)
+          - depends on [npm mailgen](https://www.npmjs.com/package/mailgen)
         - depends on `mail.js`
       - ADMIN/DEV emails
         - generate json html email
