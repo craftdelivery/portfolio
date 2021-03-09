@@ -8,7 +8,6 @@ const initialState = {
   logoutStatus: null,
   loginInProgress: false,
   logoutInProgress: false,
-  logoutInProgress: false,
   details: null,
 }
 
