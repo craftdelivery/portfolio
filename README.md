@@ -1,6 +1,6 @@
 # Portfolio
 
-Bits and pieces of the [Craft Delivery](https://craftdelivery) stack
+Bits and pieces of the [Craft Delivery](https://craftdelivery.ca) stack
 
 ### React Native Helper
 
