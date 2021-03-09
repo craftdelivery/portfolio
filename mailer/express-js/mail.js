@@ -11,8 +11,7 @@ export default class Mail {
   https://github.com/eladnava/mailgen#table
   */
 
-  // should we be useing genMail instead???
-  // actions can be in an array
+  // NOTE: actions can be in an array
   constructor(theme='default') {
     this.mg = new Mailgen({
       theme: theme,
