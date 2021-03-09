@@ -20,6 +20,9 @@ AWS, Twilio and Stripe are huge dependencies and its nice to have these separate
 
 Local Env variables have been replaced with `OMITTED`
 
+### No Database connection
+Charger, Mailer and Texter do not connect to the postgres database. This is done for security purposes as well as to minimize open connections. Database relevant feedback is provided via webhook
+
 ### Projects
 `express-js` folders contain support code from the ExpressJS monolith
   - Charger: Serverless Stripe handling
@@ -47,7 +50,5 @@ Local Env variables have been replaced with `OMITTED`
         - calls lambda with preformed HTML
   - Texter: Serverless Twilio SMS
 
-### No Database connection
-Charger, Mailer and Texter do not connect to the postgres database. This is done for security purposes as well as to minimize open connections. Database relevant feedback is provided via webhook
 
 
